@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #E5EEEE;
+}
+.container {
+	width: 400px;
+	margin: 100px auto;
+	position: relative;
+}
+.sign-in-form {
+	position: absolute;
+	top: 0;
+	padding-top: 45px;
+}
+.fieldset {
+	padding: 0;
+}
+.menu__item-link,
+.fieldset__label,
+.fieldset__Username,
+.fieldset__password,
+.fieldset__label,
+.fieldset__btn,
+.acc-lincs {
+	font-family: Quicksand, Arial, sans-serif;
+	color: white;
+}
+.sign-in-form {
+	margin: 0 70px;
+}
+.menu {
+	margin: 0 auto 45px;
+}
+.menu__item {
+	margin-right: 20px;
+}
+.menu__item-link {
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 2px solid white;
+	text-decoration: none;
+	padding-bottom: 3px;
+}
+.menu__item-link:hover {
+	color: #34e1be;
+	border-bottom: 2px solid #34e1be;
+}
+.menu__item {
+	display: inline-block;
+}
+.fieldset__label {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+#fieldset__username,
+#fieldset__password {
+	width: 260px; height: 42px;
+	padding-left: 10px;
+	border: 2px solid #bfb9cc;
+	background: transparent;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 18px;
+	color: white;
+}
+.fieldset__label {
+	font-size: 13px;
+}
+.checkbox {
+	position: relative;
+	padding-left: 25px;
+	margin: 5px 0 35px;
+}
+.checkbox #fieldset__keep-signed[type=checkbox] {
+	display: none;
+}
+.checkbox .fieldset__label::after {
+	content: '';
+	height: 16px;
+	width: 16px;
+	background-color: #23AE92;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.checkbox #fieldset__keep-signed[type=checkbox]:checked + .fieldset__label::after {
+	width: 16px;
+	height: 16px;
+	background-image: url('../img/check.svg');
+	background-repeat: no-repeat;
+	background-size: 11px;
+	background-position: center;
+}
+.fieldset__btn {
+	width: 260px;
+	height: 40px;
+	margin-bottom: 30px;
+	border: none;
+	outline: none;
+	background-color: #23AE92;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+}
+.fieldset__btn:hover {
+	background-color: #12c4a0;
+}
+.fieldset__btn:active {
+	opacity: .7;
+}
+.acc-lincs {
+	font-size: 13px;
+	opacity: .5;
+	padding-bottom: 3px;
+	text-decoration: none;
+	border-bottom: 1px solid #777;
+}
+.acc-lincs:not(:last-of-type) {
+	margin-right: 43px;
+}
+.acc-lincs:hover {
+	opacity: 1;
+}
